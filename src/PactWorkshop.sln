@@ -1,26 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "provider", "Provider\src\provider.csproj", "{6786B941-BDA4-4D7B-BDBF-4C9718800EC1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "consumer", "Consumer\src\consumer.csproj", "{8A715DA2-C097-4BB4-889B-A1E6917842A0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "Provider\tests\tests.csproj", "{E27A5CE7-B6C3-4A0C-ACB8-DC3E3A21F253}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "Consumer\tests\tests.csproj", "{CF1211DB-7949-493E-BC77-00D22DE7F00D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consumers", "Consumers", "{99695018-E686-462C-9312-A6EBFF62103E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Provider", "Provider", "{631124B8-83C8-4E2C-9FD2-7AEE06FEFBFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SushiTrackerApi", "Provider\SushiTrackerApi\SushiTrackerApi.csproj", "{65CC48DB-F8D1-4B6C-85D7-A81BCD00277A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SushiTrackerApi", "SushiTrackerApi\SushiTrackerApi.csproj", "{65CC48DB-F8D1-4B6C-85D7-A81BCD00277A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SushiTrackerApi.ProducerTests", "Provider\SushiTrackerApi.ProducerTests\SushiTrackerApi.ProducerTests.csproj", "{EAA88C15-D37A-49FD-BA57-F4FB42515D2D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SushiTrackerApi.ProducerTests", "SushiTrackerApi.ProducerTests\SushiTrackerApi.ProducerTests.csproj", "{EAA88C15-D37A-49FD-BA57-F4FB42515D2D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SushiCashier", "SushiCashier\SushiCashier.csproj", "{F339BEC1-E6CD-42A2-ACBA-F0EEFAAD10F2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SushiCashier.ConsumerTests", "SushiCashier.ConsumerTests\SushiCashier.ConsumerTests.csproj", "{D0C9076F-921B-48A5-942C-654398E755B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SushiTrackerApiContracts", "Provider\SushiTrackerApiContracts\SushiTrackerApiContracts.csproj", "{458A0BCC-7EB0-41E2-92F3-8341B5059EAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SushiTrackerApiContracts", "SushiTrackerApiContracts\SushiTrackerApiContracts.csproj", "{458A0BCC-7EB0-41E2-92F3-8341B5059EAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,22 +28,6 @@ Global
 		{D1158B76-AEB0-474D-9697-623B9157C40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1158B76-AEB0-474D-9697-623B9157C40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1158B76-AEB0-474D-9697-623B9157C40F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6786B941-BDA4-4D7B-BDBF-4C9718800EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6786B941-BDA4-4D7B-BDBF-4C9718800EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6786B941-BDA4-4D7B-BDBF-4C9718800EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6786B941-BDA4-4D7B-BDBF-4C9718800EC1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8A715DA2-C097-4BB4-889B-A1E6917842A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8A715DA2-C097-4BB4-889B-A1E6917842A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8A715DA2-C097-4BB4-889B-A1E6917842A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8A715DA2-C097-4BB4-889B-A1E6917842A0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E27A5CE7-B6C3-4A0C-ACB8-DC3E3A21F253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E27A5CE7-B6C3-4A0C-ACB8-DC3E3A21F253}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E27A5CE7-B6C3-4A0C-ACB8-DC3E3A21F253}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E27A5CE7-B6C3-4A0C-ACB8-DC3E3A21F253}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CF1211DB-7949-493E-BC77-00D22DE7F00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CF1211DB-7949-493E-BC77-00D22DE7F00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CF1211DB-7949-493E-BC77-00D22DE7F00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CF1211DB-7949-493E-BC77-00D22DE7F00D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{65CC48DB-F8D1-4B6C-85D7-A81BCD00277A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{65CC48DB-F8D1-4B6C-85D7-A81BCD00277A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65CC48DB-F8D1-4B6C-85D7-A81BCD00277A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -74,10 +50,6 @@ Global
 		{458A0BCC-7EB0-41E2-92F3-8341B5059EAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{8A715DA2-C097-4BB4-889B-A1E6917842A0} = {99695018-E686-462C-9312-A6EBFF62103E}
-		{CF1211DB-7949-493E-BC77-00D22DE7F00D} = {99695018-E686-462C-9312-A6EBFF62103E}
-		{6786B941-BDA4-4D7B-BDBF-4C9718800EC1} = {631124B8-83C8-4E2C-9FD2-7AEE06FEFBFA}
-		{E27A5CE7-B6C3-4A0C-ACB8-DC3E3A21F253} = {631124B8-83C8-4E2C-9FD2-7AEE06FEFBFA}
 		{65CC48DB-F8D1-4B6C-85D7-A81BCD00277A} = {631124B8-83C8-4E2C-9FD2-7AEE06FEFBFA}
 		{EAA88C15-D37A-49FD-BA57-F4FB42515D2D} = {631124B8-83C8-4E2C-9FD2-7AEE06FEFBFA}
 		{F339BEC1-E6CD-42A2-ACBA-F0EEFAAD10F2} = {99695018-E686-462C-9312-A6EBFF62103E}
