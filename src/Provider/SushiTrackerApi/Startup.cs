@@ -27,8 +27,6 @@ namespace SushiTrackerApi
 				app.UseDeveloperExceptionPage();
 			}
 
-			app.UseHttpsRedirection();
-
 			app.UseRouting();
 
 			app.UseAuthorization();

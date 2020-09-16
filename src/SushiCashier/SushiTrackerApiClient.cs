@@ -18,24 +18,23 @@ namespace SushiCashier
         
         public async Task<HttpResponseMessage> CreateCashierOrder(int rollsCount)
         {
-            using (var client = new HttpClient { BaseAddress = new Uri(_sushiTrackerUri)})
+            using var client = new HttpClient { BaseAddress = new Uri(_sushiTrackerUri)};
+            
+            try
             {
-                try
+                var createOrderJson = JsonConvert.SerializeObject(new CreateOrderRequest()
                 {
-                    var createOrderJson = JsonConvert.SerializeObject(new CreateOrderRequest()
-                    {
-                        RollsCount = rollsCount,
-                        IsMobileApp = false
-                    });
-                    var createOrderData = new StringContent(createOrderJson, Encoding.UTF8, "application/json");
+                    RollsCount = rollsCount,
+                    IsMobileApp = false
+                });
+                var createOrderData = new StringContent(createOrderJson, Encoding.UTF8, "application/json");
                     
-                    var response = await client.PostAsync($"/api/orders/create", createOrderData);
-                    return response;
-                }
-                catch (Exception ex)
-                {
-                    throw new Exception("There was a problem connecting to Provider API.", ex);
-                }
+                var response = await client.PostAsync($"/api/orders", createOrderData);
+                return response;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("There was a problem connecting to Provider API.", ex);
             }
         }
     }

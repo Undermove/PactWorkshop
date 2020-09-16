@@ -23,8 +23,14 @@ namespace SushiTrackerApi.Controllers
 			_logger = logger;
 		}
 
+		[HttpGet]
+		public IActionResult Get()
+		{
+			return Ok();
+		}
+		
 		[HttpPost]
-		public IActionResult Create(CreateOrderRequest createOrderRequest)
+		public IActionResult Create([FromBody] CreateOrderRequest createOrderRequest)
 		{
 			if (createOrderRequest.RollsCount < MinimalRollsCount)
 			{
