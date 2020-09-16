@@ -1,13 +1,8 @@
-using System;
 using System.Collections.Generic;
 using System.Net;
-using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using PactNet.Mocks.MockHttpService;
 using PactNet.Mocks.MockHttpService.Models;
-using SushiTrackerApiContracts;
 using Xunit;
 
 namespace SushiCashier.ConsumerTests
@@ -25,6 +20,11 @@ namespace SushiCashier.ConsumerTests
 			_sushiTrackerApiClient = new SushiTrackerApiClient(fixture.MockProviderServiceBaseUri);
 		}
 		
+		/// <summary>
+		/// Need to install PactNet.Windows to be able to start pact server on windows
+		/// Also PactNet.Linux and PactNet.OSX exists
+		/// </summary>
+		/// <returns></returns>
 		[Fact]
 		public async Task ItHandlesInvalidDateParam()
 		{

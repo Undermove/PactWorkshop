@@ -55,7 +55,7 @@ namespace SushiTrackerApi.ProducerTests
             pactVerifier.ProviderState($"{_pactServiceUri}/provider-states")
                 .ServiceProvider("Provider", _providerUri)
                 .HonoursPactWith("Consumer")
-                .PactUri(@"..\..\..\..\..\..\pacts\consumer-provider.json")
+                .PactUri(@"..\..\..\..\..\pacts\consumer-provider.json")
                 .Verify();
         }
 

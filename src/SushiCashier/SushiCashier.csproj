@@ -10,7 +10,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Provider\SushiTrackerApiContracts\SushiTrackerApiContracts.csproj" />
+      <ProjectReference Include="..\SushiTrackerApiContracts\SushiTrackerApiContracts.csproj" />
     </ItemGroup>
 
 </Project>
