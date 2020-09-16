@@ -1,9 +1,10 @@
 using System;
 using PactNet;
 using PactNet.Mocks.MockHttpService;
+
 // ReSharper disable MemberCanBePrivate.Global
 
-namespace SushiCashier.ConsumerTests
+namespace SushiMobileApi.ConsumerTests
 {
     // This class is responsible for setting up a shared
     // mock server for Pact used by all the tests.
@@ -30,7 +31,7 @@ namespace SushiCashier.ConsumerTests
 
             PactBuilder = new PactBuilder(pactConfig);
 
-            PactBuilder.ServiceConsumer("SushiCashier")
+            PactBuilder.ServiceConsumer("SushiMobileApi")
                        .HasPactWith("SushiTrackerApi");
 
             MockProviderService = PactBuilder.MockService(MockServerPort);

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace SushiCashier
+namespace SushiCookingInfoService
 {
 	// ReSharper disable once ClassNeverInstantiated.Global
 	class Program
