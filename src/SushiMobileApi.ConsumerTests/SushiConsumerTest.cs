@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using PactNet.Mocks.MockHttpService;
 using PactNet.Mocks.MockHttpService.Models;
 using SushiCookingInfoService;
+using SushiTrackerApiContracts;
 using Xunit;
 
 namespace SushiMobileApi.ConsumerTests
@@ -37,13 +38,13 @@ namespace SushiMobileApi.ConsumerTests
 				.UponReceiving("A invalid POST request for create cashier order")
 				.With(new ProviderServiceRequest
 				{
-					Method = HttpVerb.Post,
+					Method = HttpVerb.Get,
 					Path = "/api/orders",
 					Headers = new Dictionary<string, object>
 					{
 						{ "Content-Type", "application/json; charset=utf-8" }
 					},
-					Body = new
+					Body = new CreateOrderRequest
 					{
 						IsMobileApp = true,
 						RollsCount = 1,

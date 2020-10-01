@@ -3,6 +3,7 @@ using System.Net;
 using System.Threading.Tasks;
 using PactNet.Mocks.MockHttpService;
 using PactNet.Mocks.MockHttpService.Models;
+using SushiTrackerApiContracts;
 using Xunit;
 
 namespace SushiCashier.ConsumerTests
@@ -42,7 +43,7 @@ namespace SushiCashier.ConsumerTests
 					{
 						{ "Content-Type", "application/json; charset=utf-8" }
 					},
-					Body = new
+					Body = new CreateOrderRequest
 					{
 						IsMobileApp = false,
 						RollsCount = 1,
